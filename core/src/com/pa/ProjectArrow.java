@@ -4,6 +4,8 @@ import com.badlogic.gdx.Game;
 import com.screens.MenuScreen;
 
 public class ProjectArrow extends Game {
+	public static final int WIDTH = 800;
+	public static final int HEIGHT =  480;
 
 	@Override
 	public void create () {
@@ -14,5 +16,6 @@ public class ProjectArrow extends Game {
 	@Override
 	public void dispose() {
 		super.dispose();
+		Resources.dispose();
 	}
 }

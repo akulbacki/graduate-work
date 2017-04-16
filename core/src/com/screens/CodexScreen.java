@@ -1,8 +1,17 @@
 package com.screens;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.pa.ProjectArrow;
 
 public class CodexScreen implements Screen {
+    private ProjectArrow game;
+
+    public CodexScreen(ProjectArrow game){
+        this.game = game;
+        Gdx.app.log("CodexScreen","Screen is created");
+    }
+
     @Override
     public void show() {
 
